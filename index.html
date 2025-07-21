@@ -2,149 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zamini FileMerger v1.0.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zamini File Manager</title>
+  <link rel="icon" type="image/x-icon" href="Zamini_Musafir_logo.ico">
   <style>
     body {
+      background-color: #3e2f1c; /* dark brown */
+      color: #f4d58d; /* golden yellow */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
+      margin: 0;
       padding: 0 20px;
-      line-height: 1.6;
-      color: #4B3621; /* dark brown text */
-      background-color: #F5F1E9; /* warm ivory */
     }
+
+    header {
+      text-align: center;
+      padding: 40px 0 10px;
+    }
+
+    header img {
+      height: 100px;
+    }
+
     h1 {
-      text-align: center;
-      color: #6B4C3B; /* medium brown */
-      margin-bottom: 5px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-shadow: 1px 1px 0 #C9A66B; /* subtle golden glow */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #ffcc00;
     }
-    h2 {
-      color: #8B6D4B; /* golden brown */
-      border-bottom: 2px solid #C9A66B; /* golden */
-      padding-bottom: 6px;
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 5px;
+    }
+
+    .section p {
+      line-height: 1.6;
+      font-size: 1.05em;
+    }
+
+    code {
+      background-color: #2f2416;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+      color: #f0e68c;
+    }
+
+    .download-section {
+      background-color: #5c4420;
+      padding: 15px;
       margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      border-radius: 10px;
     }
-    ul, ol {
-      margin-left: 20px;
+
+    .download-section h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #fff;
     }
-    a {
+
+    .download-section a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #f4d58d;
+      color: #3e2f1c;
       text-decoration: none;
-      color: #7A5835; /* brownish gold */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    a:hover {
-      color: #C9A66B; /* golden hover */
-    }
-    .downloads {
-      text-align: center;
-      margin-top: 15px;
-      margin-bottom: 40px;
-    }
-    .download-exe {
-      display: inline-block;
-      background-color: #8B6D4B; /* golden brown */
-      color: #F5F1E9; /* ivory text */
-      font-size: 1.4em;
-      font-weight: 900;
-      padding: 14px 30px;
-      border-radius: 8px;
-      margin-right: 15px;
-      box-shadow: 0 4px 6px rgba(139, 109, 75, 0.6);
-      transition: background-color 0.3s ease;
-      letter-spacing: 1px;
-    }
-    .download-exe:hover {
-      background-color: #6B4C3B;
-    }
-    .download-source {
-      display: inline-block;
-      font-size: 0.9em;
-      color: #7A5835;
-      padding: 10px 18px;
-      border: 2px solid #C9A66B;
+      font-weight: bold;
       border-radius: 6px;
-      transition: border-color 0.3s ease, color 0.3s ease;
-      letter-spacing: 0.5px;
+      font-size: 1.1em;
     }
-    .download-source:hover {
-      border-color: #6B4C3B;
-      color: #6B4C3B;
-    }
-    strong {
-      color: #6B4C3B;
-    }
+
     footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #7A5835;
       text-align: center;
-      border-top: 1px solid #C9A66B;
-      padding-top: 15px;
-      letter-spacing: 0.5px;
+      margin: 50px 0 20px;
+      font-size: 0.9em;
+      color: #aa935b;
     }
   </style>
 </head>
 <body>
 
-<h1>Zamini FileMerger</h1>
-<p style="text-align:center; font-size:1.1em; color:#7A5835;">Merge PDFs and images offline quickly and easily</p>
+  <header>
+    <img src="Zamini_Musafir_logo.png" alt="Zamini Logo" />
+    <h1>Zamini File Manager</h1>
+    <p><strong>A lightweight drag-and-drop file merger for Windows</strong></p>
+  </header>
 
-<div class="downloads">
-  <a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download class="download-exe">
-    🖥️ Download <strong>Executable</strong>
-  </a>
-  <a href="Code_file_(Zamini_FileMerger v1.0.0).rar" download class="download-source">
-    📦 Source Code
-  </a>
-</div>
+  <div class="section">
+    <h2>🔧 What It Is</h2>
+    <p>A simple GUI-based tool built using Python's <code>Tkinter</code> that helps you <strong>merge PDF, DOCX, TXT, PPTX</strong> and image files with a drag-and-drop interface.</p>
+  </div>
 
-<h2>What is <strong>Zamini FileMerger</strong>?</h2>
-<p>Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — <strong>without needing an internet connection</strong>.</p>
+  <div class="section">
+    <h2>📦 Requirements</h2>
+    <ul>
+      <li><code>Python 3.11+</code></li>
+      <li>Install dependencies: <code>pip install -r requirements.txt</code></li>
+    </ul>
+  </div>
 
-<h2>Requirements</h2>
-<ul>
-  <li><strong>Microsoft Office</strong> installed for merging Office documents (.docx, .xlsx, etc.)</li>
-  <li><strong>Windows OS</strong> (since it’s a desktop app built with Tkinter)</li>
-</ul>
+  <div class="section">
+    <h2>🚀 How It Works</h2>
+    <p>
+      Just run the Python file, drag your supported files into the window, and click "Merge". You can preview, reorder, and save the final merged file.
+    </p>
+  </div>
 
-<h2>How It Works</h2>
-<ol>
-  <li>Click <strong>"Add Files"</strong> to select files to merge.</li>
-  <li>Arrange the files using <strong>"Move Up"</strong> and <strong>"Move Down"</strong> as needed.</li>
-  <li>Enter a name for the final merged PDF.</li>
-  <li>Click <strong>"Merge to PDF"</strong> and watch the progress bar complete.</li>
-  <li>Save and enjoy your combined PDF file!</li>
-</ol>
+  <div class="download-section">
+    <h2>⬇️ Download</h2>
+    <a href="Zamini_File_Manager_v1.0.0.zip">Download Source Code (v1.0.0)</a>
+  </div>
 
-<h2>Extra Features</h2>
-<ul>
-  <li>Rearrange files easily with Move Up/Down buttons.</li>
-  <li>Delete unwanted files from the list.</li>
-  <li>Reset the entire list to start fresh.</li>
-</ul>
-
-<h2>Who is it for?</h2>
-<ul>
-  <li>Teachers & students handling multiple document types.</li>
-  <li>Office workers needing quick PDF merges.</li>
-  <li>Print shops managing diverse print jobs.</li>
-  <li>Anyone wanting a fast, offline merging tool.</li>
-</ul>
-
-<footer>
-  <p><strong>Version 1.0.0</strong> &nbsp;|&nbsp; Developed by Zamini Musafir Team</p>
-  <p>📧 <a href="mailto:zamini.musafir123@gmail.com">zamini.musafir123@gmail.com</a> &nbsp;|&nbsp; Made in Pakistan 🇵🇰 | Built in Ajman 🇦🇪</p>
-  <p>© 2025 Zamini Musafir Team. All rights reserved.</p>
-</footer>
+  <footer>
+    Zamini File Manager v1.0.0 — Created by Ahmed Jawad
+  </footer>
 
 </body>
 </html>
