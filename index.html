@@ -2,165 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zamini FileMerger v1.0.0</title>
+  <title>Zamini File Merger</title>
   <link rel="icon" href="Zamini_Musafir_logo.ico" type="image/x-icon">
   <style>
     body {
-      background-color: #2d1f14;
-      color: #ffd700;
+      background-color: #2c1e1e; /* Dark brown */
+      color: #ffd700; /* Gold */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #4b2e1f;
-      padding: 30px 20px;
-      text-align: center;
-      border-bottom: 2px solid #d4af37;
-    }
-
-    header h1 {
-      font-size: 2.8em;
-      margin: 0;
-      color: #f2c744;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 1.8em;
-      color: #ffdb58;
-      border-bottom: 1px solid #ffcc00;
-      padding-bottom: 5px;
-    }
-
-    p {
-      font-size: 1.1em;
-      line-height: 1.7em;
-      color: #f8e7b9;
-    }
-
-    strong {
-      color: #f9d948;
-    }
-
-    .download-section {
-      background-color: #3c2b1b;
-      padding: 25px;
-      border-radius: 12px;
-      border: 2px solid #d4af37;
-      text-align: center;
-    }
-
-    .download-section a {
-      font-size: 1.3em;
-      display: inline-block;
-      margin: 10px 0;
-      padding: 12px 24px;
-      color: #2d1f14;
-      background-color: #ffcc00;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #aa8b5c;
       padding: 20px;
-      border-top: 1px solid #444;
+      line-height: 1.6;
     }
 
-    code {
-      font-size: 0.95em;
-      color: #f5d98b;
-      background-color: #1e1e1e;
-      padding: 2px 6px;
-      border-radius: 4px;
+    h1, h2 {
+      color: #ffcc00;
+    }
+
+    .highlight {
+      background-color: #4a2c2a;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #ffcc00;
+      color: #2c1e1e;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .small-text {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    pre {
+      background-color: #3b2b2b;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      color: #fff8dc;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Zamini File Merger</h1>
-    <p><strong>Merge multiple files into one with just a few clicks!</strong></p>
-  </header>
+  <img src="Zamini_Musafir_logo.ico" alt="Zamini Logo" class="logo">
+  <h1>Zamini File Merger</h1>
 
-  <div class="container">
-
-    <section>
-      <h2>🛠️ What is This?</h2>
-      <p><strong>Zamini File Merger</strong> is a lightweight desktop tool (built with Python & Tkinter) that helps you combine multiple files — PDFs, DOCXs, TXTs, PPTs — into a single merged file easily.</p>
-    </section>
-
-    <section>
-      <h2>✅ Requirements</h2>
-      <p>Python 3.10 or later is recommended. Make sure the following Python modules are installed:</p>
-      <ul>
-        <li><code>PyPDF2</code></li>
-        <li><code>docx</code></li>
-        <li><code>win32com.client</code></li>
-        <li><code>tkinter</code></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>⚙️ How It Works</h2>
-      <p>1. Drag and drop your files into the app window.<br>
-         2. Reorder them if needed.<br>
-         3. Click merge and get your single file!</p>
-    </section>
-
-    <section>
-      <h2>🌟 Features</h2>
-      <ul>
-        <li><strong>Supports:</strong> PDF, DOCX, TXT, PPT</li>
-        <li><strong>Drag & Drop Interface</strong></li>
-        <li><strong>Fast merging process</strong> with file order control</li>
-        <li><strong>Clean UI</strong> using Tkinter (no extra installations)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📥 Download</h2>
-      <div class="download-section">
-        <p><strong>👉 For Users (EXE Version)</strong></p>
-        <a href="Zamini_FileMerger_v1.0.0.zip" download>Download Zamini_FileMerger_v1.0.0.zip</a>
-
-        <p><strong>💻 For Developers (Source Code)</strong></p>
-        <a href="https://github.com/ahmedjawad123/Zamini-FileMerger_v1.0.0" target="_blank">View on GitHub</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>🏆 Best For</h2>
-      <p>Teachers, students, and anyone who regularly combines documents for reports, lectures, or projects.</p>
-    </section>
-
-    <section>
-      <h2>📄 Version & Credits</h2>
-      <p><strong>Version:</strong> 1.0.0<br>
-         <strong>Developer:</strong> Ahmed Jawad<br>
-         <strong>GitHub:</strong> <a href="https://github.com/ahmedjawad123" style="color: #ffdb58;" target="_blank">ahmedjawad123</a></p>
-    </section>
-
+  <div class="highlight">
+    <strong>What it does:</strong><br>
+    A simple drag-and-drop tool to merge multiple file types like PDF, Word, Excel, Text, and more — into a single PDF.
   </div>
 
-  <div class="footer">
-    © 2025 Zamini Tools. All rights reserved.
-  </div>
+  <h2>🛠 How to Use</h2>
+  <ul>
+    <li>Download and run the app.</li>
+    <li>Drag and drop your files into the window.</li>
+    <li>Click merge — done!</li>
+  </ul>
+
+  <h2>✨ Extra Features</h2>
+  <ul>
+    <li>Supports .doc, .docx, .xls, .xlsx, .ppt, .pptx, .txt, .pdf, .jpg, .png</li>
+    <li>Auto-preview of added files</li>
+    <li>Easy-to-use interface</li>
+  </ul>
+
+  <h2>✅ Best For</h2>
+  <ul>
+    <li>Teachers merging student files</li>
+    <li>Office use</li>
+    <li>Daily work reports or documentation</li>
+  </ul>
+
+  <h2>⬇️ Download</h2>
+  <a href="Zamini_File_Merger_v1.0.0.exe" class="button">Download EXE (Windows)</a>
+
+  <h2>📦 Source Code</h2>
+  <pre>https://github.com/Ahmedjawad123/Zamini-FileMerger_v1.0.0</pre>
+
+  <p class="small-text">Version: 1.0.0<br>Created by Ahmed Jawad</p>
 
 </body>
 </html>
