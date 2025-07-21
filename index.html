@@ -6,87 +6,111 @@
   <title>Zamini FileMerger v1.0.0</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       max-width: 700px;
-      margin: 30px auto;
-      padding: 0 15px;
+      margin: 40px auto;
+      padding: 0 20px;
       line-height: 1.5;
-      color: #222;
+      color: #333;
+      background-color: #f9f9f9;
     }
-    h1, h2, h3 {
-      color: #2a2a72;
+    h1 {
+      text-align: center;
+      color: #2a7ae2;
+      margin-bottom: 5px;
     }
-    hr {
-      margin: 30px 0;
-      border: none;
-      border-top: 1px solid #ddd;
+    h2 {
+      color: #2a7ae2;
+      border-bottom: 2px solid #2a7ae2;
+      padding-bottom: 6px;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
     ul, ol {
       margin-left: 20px;
     }
     a {
-      color: #0066cc;
+      color: #2a7ae2;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    small {
-      color: #555;
+    .download-links {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .download-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.1em;
+      background-color: #2a7ae2;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    .download-links a:hover {
+      background-color: #185bb5;
+    }
+    footer {
+      margin-top: 60px;
       font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
     }
   </style>
 </head>
 <body>
 
-<h1>Zamini FileMerger v1.0.0</h1>
+<h1>Zamini FileMerger</h1>
+<p style="text-align:center; font-size:1.1em; color:#555;">Merge PDFs and images offline quickly and easily</p>
 
-<h2>Downloads:</h2>
+<div class="download-links">
+  <a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download>🖥️ Download Executable</a>
+  <a href="Code_file_(Zamini_FileMerger v1.0.0).rar" download>📦 Download Source Code</a>
+</div>
+
+<h2>What is Zamini FileMerger?</h2>
+<p>Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — without needing an internet connection.</p>
+
+<h2>Requirements</h2>
 <ul>
-  <li><a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download>🖥️ Executable</a></li>
-  <li><a href="Code_file_(Zamini_FileMerger v1.0.0).rar" download>📦 Source Code</a></li>
+  <li>Microsoft Office installed for merging Office documents (.docx, .xlsx, etc.)</li>
+  <li>Windows OS (since it’s a desktop app built with Tkinter)</li>
 </ul>
 
-<hr />
-
-<h3>What is it?</h3>
-<p>
-  Zamini FileMerger lets you merge PDFs and images easily offline.<br />
-  <strong>Requirement:</strong> Microsoft Office must be installed to merge Office files like .docx, .xlsx, etc.
-</p>
-
-<h3>How it works</h3>
+<h2>How It Works</h2>
 <ol>
-  <li>Click "Add Files" to select files you want to merge.</li>
-  <li>Type a name for the final merged PDF.</li>
-  <li>Click "Merge to PDF" to create and save your file.</li>
-  <li>Track progress with the progress bar.</li>
+  <li>Click "Add Files" to select files to merge.</li>
+  <li>Arrange the files using "Move Up" and "Move Down" as needed.</li>
+  <li>Enter a name for the final merged PDF.</li>
+  <li>Click "Merge to PDF" and watch the progress bar complete.</li>
+  <li>Save and enjoy your combined PDF file!</li>
 </ol>
 
-<h3>Extra Features</h3>
+<h2>Extra Features</h2>
 <ul>
-  <li>Rearrange files with "Move Up" and "Move Down" buttons.</li>
-  <li>Remove files using "Delete Selected".</li>
-  <li>Clear everything with "Reset" to start over.</li>
+  <li>Rearrange files easily with Move Up/Down buttons.</li>
+  <li>Delete unwanted files from the list.</li>
+  <li>Reset the entire list to start fresh.</li>
 </ul>
 
-<h3>Best For</h3>
+<h2>Who is it for?</h2>
 <ul>
-  <li>Teachers & students who often get non-PDF files.</li>
-  <li>Office workers needing quick, hassle-free PDF merges.</li>
-  <li>Print shop staff handling various file types.</li>
-  <li>Anyone wanting a simple offline file merger.</li>
+  <li>Teachers & students handling multiple document types.</li>
+  <li>Office workers needing quick PDF merges.</li>
+  <li>Print shops managing diverse print jobs.</li>
+  <li>Anyone wanting a fast, offline merging tool.</li>
 </ul>
 
-<hr />
-
-<small>
-  <strong>Version:</strong> 1.0.0 (Major.Minor.Patch)<br />
-  <strong>Developer:</strong> Zamini Musafir Team<br />
-  <strong>Email:</strong> zamini.musafir123@gmail.com<br />
-  <strong>Location:</strong> Made in Pakistan 🇵🇰 | Built in Ajman 🇦🇪<br />
-  &copy; 2025 Zamini Musafir Team
-</small>
+<footer>
+  <p><strong>Version 1.0.0</strong> &nbsp;|&nbsp; Developed by Zamini Musafir Team</p>
+  <p>📧 <a href="mailto:zamini.musafir123@gmail.com">zamini.musafir123@gmail.com</a> &nbsp;|&nbsp; Made in Pakistan 🇵🇰 | Built in Ajman 🇦🇪</p>
+  <p>© 2025 Zamini Musafir Team. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
