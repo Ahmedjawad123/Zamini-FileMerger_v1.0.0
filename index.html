@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Zamini FileMerger v1.0.0</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
-    color: #4B3621; /* dark brown text */
-    background-color: #F9F7F1; /* light warm ivory */
-  }
-  h1 {
-    text-align: center;
-    color: #B8860B; /* dark goldenrod */
-    margin-bottom: 10px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-shadow: 0 0 8px #FFD700, 0 0 4px #FFD700; /* glowing gold */
-    font-size: 3em;
-  }
-  h2 {
-    color: #D4AF37; /* bright gold */
-    border-bottom: 3px solid #FFD700;
-    padding-bottom: 8px;
-    margin-top: 50px;
-    margin-bottom: 22px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-  }
-  ul, ol {
-    margin-left: 20px;
-  }
-  a {
-    text-decoration: none;
-    color: #A97122; /* rich brown gold */
-    font-weight: 600;
-  }
-  a:hover {
-    color: #FFD700; /* bright gold hover */
-    text-shadow: 0 0 5px #FFD700;
-  }
-  .downloads {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  .download-exe {
-    display: inline-block;
-    background: linear-gradient(45deg, #FFD700, #FFC107);
-    color: #4B3621; /* dark brown text */
-    font-size: 1.5em;
-    font-weight: 900;
-    padding: 16px 36px;
-    border-radius: 10px;
-    margin-right: 20px;
-    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.6);
-    letter-spacing: 1.5px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-  }
-  .download-exe:hover {
-    background: linear-gradient(45deg, #FFC107, #FFD700);
-    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.9);
-    color: #4B3621;
-  }
-  .download-source {
-    display: inline-block;
-    font-size: 1em;
-    color: #A97122;
-    padding: 12px 22px;
-    border: 2px solid #D4AF37;
-    border-radius: 8px;
-    transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    font-weight: 600;
-  }
-  .download-source:hover {
-    border-color: #FFD700;
-    color: #FFD700;
-    box-shadow: 0 0 6px #FFD700;
-  }
-  strong {
-    color: #B8860B;
-  }
-  footer {
-    margin-top: 80px;
-    font-size: 0.9em;
-    color: #A97122;
-    text-align: center;
-    border-top: 2px solid #FFD700;
-    padding-top: 18px;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zamini FileMerger v1.0.0</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #4B3621; /* dark brown text */
+      background-color: #F5F1E9; /* warm ivory */
+    }
+    h1 {
+      text-align: center;
+      color: #6B4C3B; /* medium brown */
+      margin-bottom: 5px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 0 #C9A66B; /* subtle golden glow */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h2 {
+      color: #8B6D4B; /* golden brown */
+      border-bottom: 2px solid #C9A66B; /* golden */
+      padding-bottom: 6px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #7A5835; /* brownish gold */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    a:hover {
+      color: #C9A66B; /* golden hover */
+    }
+    .downloads {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    .download-exe {
+      display: inline-block;
+      background-color: #8B6D4B; /* golden brown */
+      color: #F5F1E9; /* ivory text */
+      font-size: 1.4em;
+      font-weight: 900;
+      padding: 14px 30px;
+      border-radius: 8px;
+      margin-right: 15px;
+      box-shadow: 0 4px 6px rgba(139, 109, 75, 0.6);
+      transition: background-color 0.3s ease;
+      letter-spacing: 1px;
+    }
+    .download-exe:hover {
+      background-color: #6B4C3B;
+    }
+    .download-source {
+      display: inline-block;
+      font-size: 0.9em;
+      color: #7A5835;
+      padding: 10px 18px;
+      border: 2px solid #C9A66B;
+      border-radius: 6px;
+      transition: border-color 0.3s ease, color 0.3s ease;
+      letter-spacing: 0.5px;
+    }
+    .download-source:hover {
+      border-color: #6B4C3B;
+      color: #6B4C3B;
+    }
+    strong {
+      color: #6B4C3B;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #7A5835;
+      text-align: center;
+      border-top: 1px solid #C9A66B;
+      padding-top: 15px;
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
 
 <h1>Zamini FileMerger</h1>
-<p style="text-align:center; font-size:1.2em; color:#A97122; font-weight: 600;">
-  Merge PDFs and images offline quickly and easily
-</p>
+<p style="text-align:center; font-size:1.1em; color:#7A5835;">Merge PDFs and images offline quickly and easily</p>
 
 <div class="downloads">
   <a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download class="download-exe">
@@ -112,9 +108,7 @@
 </div>
 
 <h2>What is <strong>Zamini FileMerger</strong>?</h2>
-<p>
-  Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — <strong>without needing an internet connection</strong>.
-</p>
+<p>Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — <strong>without needing an internet connection</strong>.</p>
 
 <h2>Requirements</h2>
 <ul>
