@@ -30,28 +30,43 @@
       margin-left: 20px;
     }
     a {
-      color: #2a7ae2;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .download-links {
+    .downloads {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;
     }
-    .download-links a {
+    .download-exe {
       display: inline-block;
-      margin: 0 10px;
-      font-size: 1.1em;
       background-color: #2a7ae2;
       color: white;
-      padding: 10px 18px;
-      border-radius: 6px;
+      font-size: 1.4em;
+      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 8px;
+      margin-right: 15px;
+      box-shadow: 0 4px 6px rgba(42, 122, 226, 0.4);
       transition: background-color 0.3s ease;
     }
-    .download-links a:hover {
+    .download-exe:hover {
       background-color: #185bb5;
+    }
+    .download-source {
+      display: inline-block;
+      font-size: 0.9em;
+      color: #555;
+      padding: 10px 18px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .download-source:hover {
+      border-color: #2a7ae2;
+      color: #2a7ae2;
+    }
+    strong {
+      color: #2a7ae2;
     }
     footer {
       margin-top: 60px;
@@ -68,26 +83,30 @@
 <h1>Zamini FileMerger</h1>
 <p style="text-align:center; font-size:1.1em; color:#555;">Merge PDFs and images offline quickly and easily</p>
 
-<div class="download-links">
-  <a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download>🖥️ Download Executable</a>
-  <a href="Code_file_(Zamini_FileMerger v1.0.0).rar" download>📦 Download Source Code</a>
+<div class="downloads">
+  <a href="Executable_file_(Zamini_FileMerger v1.0.0).rar" download class="download-exe">
+    🖥️ Download <strong>Executable</strong>
+  </a>
+  <a href="Code_file_(Zamini_FileMerger v1.0.0).rar" download class="download-source">
+    📦 Source Code
+  </a>
 </div>
 
-<h2>What is Zamini FileMerger?</h2>
-<p>Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — without needing an internet connection.</p>
+<h2>What is <strong>Zamini FileMerger</strong>?</h2>
+<p>Zamini FileMerger is a simple desktop tool designed to merge PDF files, images, and Office documents into one PDF file — <strong>without needing an internet connection</strong>.</p>
 
 <h2>Requirements</h2>
 <ul>
-  <li>Microsoft Office installed for merging Office documents (.docx, .xlsx, etc.)</li>
-  <li>Windows OS (since it’s a desktop app built with Tkinter)</li>
+  <li><strong>Microsoft Office</strong> installed for merging Office documents (.docx, .xlsx, etc.)</li>
+  <li><strong>Windows OS</strong> (since it’s a desktop app built with Tkinter)</li>
 </ul>
 
 <h2>How It Works</h2>
 <ol>
-  <li>Click "Add Files" to select files to merge.</li>
-  <li>Arrange the files using "Move Up" and "Move Down" as needed.</li>
+  <li>Click <strong>"Add Files"</strong> to select files to merge.</li>
+  <li>Arrange the files using <strong>"Move Up"</strong> and <strong>"Move Down"</strong> as needed.</li>
   <li>Enter a name for the final merged PDF.</li>
-  <li>Click "Merge to PDF" and watch the progress bar complete.</li>
+  <li>Click <strong>"Merge to PDF"</strong> and watch the progress bar complete.</li>
   <li>Save and enjoy your combined PDF file!</li>
 </ol>
 
