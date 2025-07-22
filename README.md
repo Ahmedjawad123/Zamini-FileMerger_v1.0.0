@@ -1,7 +1,3 @@
-Got it. Here's your updated and **cleaner** `README.md` for **Zamini Converter v1.0.0**, with **no mention of Python libraries**:
-
----
-
 # Zamini Converter v1.0.0
 
 A simple and efficient file converter desktop tool for personal, office, or educational use.
@@ -10,7 +6,7 @@ A simple and efficient file converter desktop tool for personal, office, or educ
 
 ## ✅ What is Zamini Converter?
 
-**Zamini Converter** is a lightweight desktop application that allows users to convert various types of files into **PDF format** through a simple drag-and-drop interface. No complex setup, no confusing options — just drop your files and convert.
+**Zamini Converter**  convert various types of files into **PDF format** through a simple drag-and-drop interface.
 
 ---
 
