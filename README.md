@@ -1,53 +1,60 @@
-# Zamini_FileMerger v1.0.0
+# Zamini Converter v1.0.0
 
-## Purpose
-Zamini_FileMerger is a simple, offline tool designed to help you merge PDFs and images quickly without needing internet or complicated software. It’s especially useful if you often get documents in different formats that need to be combined into one PDF.
-
-> **Note:** Microsoft Office **must be installed** to merge Office files like `.docx` or `.xlsx`.
+A simple and efficient file converter desktop tool for personal, office, or educational use.
 
 ---
 
-## How to Use
+## ✅ What is Zamini Converter?
 
-- Click **Add Files** to select the files you want to merge.
-- Type a file name in the text box for your final PDF.
-- Click **Merge to PDF** to create and save your merged file.
-- Use the **progress bar** to track the merging progress.
+**Zamini Converter** is convert various types of files into **PDF format** through a simple drag-and-drop interface.
 
 ---
 
-## Extra Features
+## 🚀 How It Works
 
-- Use **Move Up** and **Move Down** to reorder files as needed.
-- Click **Delete Selected** to remove unwanted files.
-- Use **Reset** to clear the list and start fresh.
-
-Enjoy merging your files easily!
-
----
-
-## About Zamini_FileMerger
-
-**Version:** v1.0.0  
-**Version Number Explanation:**  
-- **1** = Major version: big feature changes or redesigns.  
-- **0** = Minor version: smaller features or improvements.  
-- **0** = Patch version: bug fixes or small tweaks.
-
-**Developed by:** Zamini Musafir Team  
-**Contact:** zamini.musafir123@gmail.com  
-**Origin:** Made in Pakistan | Built in Ajman  
-**Category:** ZaminiTools Collection  
+1. Open the Zamini Converter app.
+2. Drag and drop your file(s) into the interface.
+3. Files are automatically converted to PDF.
+4. Converted PDFs are saved in your chosen folder.
 
 ---
 
-## Best For
+## 📂 Supported File Types
 
-- **Teachers & Students** — who frequently receive non-PDF documents that need merging.  
-- **Office workers** — requiring quick and efficient PDF merging without extra hassle.  
-- **Print shop staff** — managing print requests from varied file types, especially where PDF files are missing.  
-- **Anyone** — looking for a simple, offline solution for file merging.
+**Office Files**
+`.pdf`, `.doc`, `.docx`, `.txt`, `.csv`, `.xls`, `.xlsx`, `.ppt`, `.pptx`
+
+**Image Files**
+`.jpg`, `.jpeg`, `.png`, `.webp`, `.bmp`, `.tiff`, `.gif`, `.ico`, `.jfif`
+
+**Code & Other Files**
+`.md`, `.py`, `.c`, `.cpp`, `.java`, `.js`, `.sh`, `.bat`, `.html`, `.css`,
+`.json`, `.xml`, `.yaml`, `.yml`, `.ini`, `.conf`, `.log`, `.tsv`
 
 ---
 
-Thank you for using Zamini_FileMerger!  
+## 🌟 Best For
+
+* Office professionals converting documents or presentations
+* Students organizing notes and assignments
+* Developers saving code or logs as PDFs
+* Anyone who needs quick, no-hassle file-to-PDF conversion
+
+---
+
+## 🔗 Download & Info
+
+🔹 [Download Zamini Converter v1.0.0](https://ahmedjawad123.github.io/Zamini-Converter_v1.0.0/)
+🔹 View on [GitHub](https://github.com/ahmedjawad123/Zamini-Converter_v1.0.0)
+
+---
+
+## 👤 Author
+
+**Ahmed Jawad**
+Dubai
+Version: `v1.0.0`
+
+---
+
+Let me know if you want this in a Canva-ready design too.
